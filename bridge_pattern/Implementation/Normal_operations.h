@@ -5,9 +5,16 @@
 #ifndef TAREA2_DATOS2_NORMAL_OPERATIONS_H
 #define TAREA2_DATOS2_NORMAL_OPERATIONS_H
 
+#include <string>
+#include "Operations.h"
 
-class Normal_operations {
+using namespace std;
 
+class Normal_operations : public Operations {
+    string addition(int num_1, int num_2) const override;
+    string subtraction(int num_1, int num_2) const override;
+    string multiplication(int num_1, int num_2) const override;
+    string division(int num_1, int num_2) const override;
 };
 
 

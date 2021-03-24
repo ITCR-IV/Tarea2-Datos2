@@ -12,11 +12,11 @@ using namespace std;
 class Operations {
 public:
     virtual ~Operations(){}
-    virtual string addition() const = 0;
-    virtual string subtraction() const = 0;
-    virtual string multiplication() const = 0;
-    virtual string division() const = 0;
-    virtual string power_of() const = 0;
+    virtual string addition(int num_1, int num_2) const = 0;
+    virtual string subtraction(int num_1, int num_2) const = 0;
+    virtual string multiplication(int num_1, int num_2) const = 0;
+    virtual string division(int num_1, int num_2) const = 0;
+    virtual string power_of(int num_1, int num_2) const = 0;
 };
 
 
