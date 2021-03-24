@@ -6,18 +6,21 @@
 #define TAREA2_DATOS2_BRIDGE_PATTERN_H
 
 #include <string>
+#include <Implementation/Operations.h>
+
 using namespace std;
 
-// Class abstraction
+// abstraction Class
 
 class Calculator {
+
 protected:
-    //Operations* operations_;
+    Operations* operations_;
+
 public:
     virtual ~Calculator(){}
-//    Calculator(Operations* operation) : operations_(operation){
-//
-//    }
+    Calculator(Operations* operation) : operations_(operation){
+    }
     virtual string calculator_type() const = 0;
 };
 
