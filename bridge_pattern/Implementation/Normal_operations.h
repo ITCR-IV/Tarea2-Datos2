@@ -11,10 +11,12 @@
 using namespace std;
 
 class Normal_operations : public Operations {
-    string addition(int num_1, int num_2) const override;
-    string subtraction(int num_1, int num_2) const override;
-    string multiplication(int num_1, int num_2) const override;
-    string division(int num_1, int num_2) const override;
+    public:
+        string addition(int num_1, int num_2) const override;
+        string subtraction(int num_1, int num_2) const override;
+        string multiplication(int num_1, int num_2) const override;
+        string division(int num_1, int num_2) const override;
+        string power_of(int num_1, int num_2) const override;
 };
 
 

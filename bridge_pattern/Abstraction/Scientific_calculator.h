@@ -11,7 +11,8 @@ using namespace std;
 
 class Scientific_calculator : public Calculator {
     public:
-        string calculator_type() const override;
+        Scientific_calculator(Operations* operation): Calculator(operation){}
+        string calculator_type(int num_1, int num_2, string operation) const override;
 };
 
 

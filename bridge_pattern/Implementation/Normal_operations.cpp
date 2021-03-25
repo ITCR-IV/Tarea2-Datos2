@@ -23,3 +23,7 @@ string Normal_operations::division(int num_1, int num_2) const {
     int tmp = num_1 / num_2;
     return "Result on normal calculator:  " + to_string(tmp);
 }
+
+string Normal_operations::power_of(int num_1, int num_2) const {
+    return "Normal calculator: error";
+}
