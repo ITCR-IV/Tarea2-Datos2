@@ -11,7 +11,7 @@ using namespace std;
 
 class Operations {
 public:
-    virtual ~Operations(){}
+    virtual ~Operations()= default;
     virtual string addition(int num_1, int num_2) const = 0;
     virtual string subtraction(int num_1, int num_2) const = 0;
     virtual string multiplication(int num_1, int num_2) const = 0;

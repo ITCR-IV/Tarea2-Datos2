@@ -18,8 +18,8 @@ protected:
     Operations* operations_;
 
 public:
-    virtual ~Calculator(){}
-    Calculator(Operations* operation) : operations_(operation){
+    virtual ~Calculator()= default;
+    explicit Calculator(Operations* operation) : operations_(operation){
     }
     virtual string calculator_type(int num_1, int num_2, string operation) const = 0;
 };

@@ -12,7 +12,7 @@ using namespace std;
 
 class Normal_calculator : public Calculator {
     public:
-        Normal_calculator(Operations* operation): Calculator(operation){}
+        explicit Normal_calculator(Operations* operation): Calculator(operation){}
         string calculator_type(int num_1, int num_2, string operation) const override;
 };
 
