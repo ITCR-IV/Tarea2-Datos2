@@ -6,9 +6,9 @@
 class Publisher {
  public:
   virtual ~Publisher(){};
-  virtual void Attach(Observer *observer) = 0;
-  virtual void Detach(Observer *observer) = 0;
-  virtual void Notify() = 0;
+  virtual void subscribe(Observer *observer) = 0;
+  virtual void unsubscribe(Observer *observer) = 0;
+  virtual void notify() = 0;
 };
 
 #endif
