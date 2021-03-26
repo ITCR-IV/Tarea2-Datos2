@@ -20,5 +20,8 @@ int LetterObserver::letterCount(const std::string &message){
 
 void LetterObserver::update(const std::string &message){
     int count = letterCount(message);
-    std::cout << ">Last message contained " << count << " letters '" << (char) tolower(trackingLetter) << "'" << std::endl;
+    if (count>0)
+    {
+        std::cout << ">Last message contained " << count << " letters '" << (char) tolower(trackingLetter) << "'" << std::endl;
+    }
 }
