@@ -7,7 +7,7 @@ void TextPublisher::getInput()
 {
     std::cout << "\nInput a new message:\n";
     std::string msg;
-    std::cin >> msg;
+    std::getline(std::cin,msg);
     lastMessage = msg;
     notify();
 }
