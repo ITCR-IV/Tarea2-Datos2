@@ -1,5 +1,6 @@
 #include "LetterObserver.h"
 #include <iostream>
+#include <string>
 
 LetterObserver::LetterObserver(char letter){
     trackingLetter = toupper(letter);
